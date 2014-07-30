@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slideMenuMain"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/black" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+<!-- 
+** removed header line **
+            <RelativeLayout
+                android:id="@+id/headerLine"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/header_line_color" >
+            </RelativeLayout>
+ -->
+
+
+            <com.android.gs.utils.ui.SearchLayout
+                android:id="@+id/search"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:layout_marginTop="@dimen/standard_margin" />
+            <!-- cart -->
+
+            <LinearLayout
+                android:id="@+id/llCartMenu"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@xml/item_selector"
+                android:orientation="horizontal"
+                android:padding="@dimen/standard_wide_padding" >
+
+                <ImageView
+                    android:layout_width="@dimen/slide_icon_menu_size"
+                    android:layout_height="@dimen/slide_icon_menu_size"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/white"
+                    android:padding="@dimen/standard_padding"
+                    android:src="@drawable/cart" />
+
+                <TextView
+                    android:id="@+id/tvCartMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/standard_padding_slide_menu"
+                    android:gravity="center"
+                    android:text="@string/cart"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/distributor_name_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <!-- home -->
+
+            <LinearLayout
+                android:id="@+id/llHome"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@xml/item_selector"
+                android:orientation="horizontal"
+                android:padding="@dimen/standard_wide_padding" >
+
+                <ImageView
+                    android:layout_width="@dimen/slide_icon_menu_size"
+                    android:layout_height="@dimen/slide_icon_menu_size"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/white"
+                    android:padding="@dimen/standard_padding"
+                    android:src="@drawable/home" />
+
+                <TextView
+                    android:id="@+id/tvHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/standard_padding_slide_menu"
+                    android:gravity="center"
+                    android:text="@string/home"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/distributor_name_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- category -->
+
+            <LinearLayout
+                android:id="@+id/llGroupMainCat"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/standard_wide_padding" >
+
+                <LinearLayout
+                    android:id="@+id/llCategories"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@xml/item_selector"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="@dimen/slide_icon_menu_size"
+                        android:layout_height="@dimen/slide_icon_menu_size"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/white"
+                        android:padding="@dimen/standard_padding"
+                        android:src="@drawable/category" />
+
+                    <TextView
+                        android:id="@+id/tvCategory"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/standard_padding_slide_menu"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/category"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/distributor_name_size"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/ivNavigator"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/collapsed_icon" />
+                </LinearLayout>
+                <!-- list distributor -->
+
+                <LinearLayout
+                    android:id="@+id/llDistributor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/standard_wide_padding"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rlShadow"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/shadow_width"
+        android:layout_height="fill_parent"
+        android:background="@drawable/drawer_shadow" >
+    </RelativeLayout>
+
+</RelativeLayout>

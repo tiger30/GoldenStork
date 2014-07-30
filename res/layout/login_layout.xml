@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black" >
+
+    <RelativeLayout
+        android:id="@+id/headerLine"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/header_line_color" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/headerLine"
+        android:layout_marginBottom="@dimen/standard_wide_padding"
+        android:layout_marginLeft="@dimen/standard_padding_slide_menu"
+        android:layout_marginRight="@dimen/standard_wide_padding"
+        android:layout_marginTop="@dimen/standard_wide_padding" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/group_name"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_name_screen" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvAccount"
+            android:layout_below="@+id/tvTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/standard_wide_padding"
+            android:gravity="center"
+            android:text="@string/login_distributer"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/title_name_screen" />
+
+        <TextView
+            android:id="@+id/tvAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/edAccount"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:text="@string/account"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_name_screen" />
+
+        <EditText
+            android:id="@+id/edAccount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvPassword"
+            android:layout_marginBottom="@dimen/standard_wide_padding"
+            android:background="@android:color/white"
+            android:padding="@dimen/standard_padding"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/edPassword"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:text="@string/password"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_name_screen" />
+
+        <EditText
+            android:id="@+id/edPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/white"
+            android:inputType="textPassword"
+            android:padding="@dimen/standard_padding"
+            android:textColor="@android:color/black" />
+
+        <CheckBox
+            android:id="@+id/cbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edPassword"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/standard_wide_padding"
+            android:layout_marginTop="@dimen/standard_wide_padding"
+            android:button="@xml/custom_checkbox"
+            android:paddingBottom="@dimen/standard_padding"
+            android:paddingTop="@dimen/standard_padding"
+            android:text="@string/remember_acc"
+            android:textSize="@dimen/title_name" />
+
+        <Button
+            android:id="@+id/btLogin"
+            style="@style/CommonButton"
+            android:layout_below="@+id/cbox"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:text="@string/login_upper" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</RelativeLayout>

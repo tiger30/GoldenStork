@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlSearch"
+    android:layout_centerVertical="true"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white" >
+
+    <EditText
+        android:id="@+id/edSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/line1"
+        android:hint="@string/search"
+   		android:padding="@dimen/small_padding"
+        android:singleLine="true"
+        android:textStyle="italic"
+        android:textColor="@android:color/black"
+        android:background="@android:color/transparent"
+        android:textCursorDrawable="@null" />
+
+    <RelativeLayout
+        android:id="@+id/line1"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/standard_margin"
+        android:layout_marginRight="@dimen/standard_margin"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/ivSearch"
+        android:background="@drawable/vertical_search" >
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/ivSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@xml/item_selector"
+        android:paddingBottom="@dimen/small_padding"
+        android:paddingLeft="@dimen/standard_padding"
+        android:paddingRight="@dimen/standard_padding"
+        android:paddingTop="@dimen/small_padding"
+        android:src="@drawable/ic_action_search" />
+
+</RelativeLayout>

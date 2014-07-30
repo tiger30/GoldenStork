@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="small_margin">2dp</dimen>
+    <dimen name="standard_margin">5dp</dimen>
+    <dimen name="standard_padding">5dp</dimen>
+    <dimen name="standard_wide_padding">10dp</dimen>
+    <dimen name="standard_padding_slide_menu">15dp</dimen>
+    <dimen name="loading_icon_size">20dp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">8dp</dimen>
+    <dimen name="button_confirm_w">60dp</dimen>
+    <dimen name="button_confirm_h">42dp</dimen>
+    <dimen name="search_icon_size">27dp</dimen>
+    <dimen name="distance_show_slide">100dp</dimen>
+    <dimen name="slide_margin_right">110dp</dimen>
+    <dimen name="header_height">54dp</dimen>
+    <dimen name="small_padding">2dp</dimen>
+    <dimen name="image_item_product_width">50dp</dimen>
+    <dimen name="image_item_product_height">60dp</dimen>
+    <dimen name="item_product_height">95dp</dimen>
+    <dimen name="image_detail_product_width">115dp</dimen>
+    <dimen name="image_detail_product_height">178dp</dimen>
+    <dimen name="edittext_margin_right">60dp</dimen>
+    <dimen name="edittext_margin_right_half">30dp</dimen>
+    <dimen name="text_width_form">60dp</dimen>
+    <dimen name="margin_text_dialog_confirm">30dp</dimen>
+    
+ 	<dimen name="common_button_min_height">35dp</dimen>
+ 	
+ 	<dimen name="slide_icon_menu_size">45dp</dimen>
+ 	<dimen name="separate_line_size">1dp</dimen>
+ 	
+    <!-- text size -->
+
+    <dimen name="title_name_screen">18dp</dimen>
+    <dimen name="distributor_name_size">16dp</dimen>
+    <dimen name="title_name">14dp</dimen>
+    <dimen name="content_name">12dp</dimen>
+    <dimen name="checkbox_size">20dp</dimen>
+    <dimen name="checkbox_inside_size">15dp</dimen>
+    <dimen name="cart_number_size">13dp</dimen>
+    <dimen name="standard_wide_margin">20dp</dimen>
+    <dimen name="cat_item_small">30dp</dimen>
+    
+</resources>

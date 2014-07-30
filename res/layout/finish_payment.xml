@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/headerLine"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/header_line_color" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@android:color/black"
+        android:padding="@dimen/standard_padding" >
+
+        <ImageButton
+            android:id="@+id/ivIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@xml/item_selector"
+            android:src="@drawable/ic_action_back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btEdit"
+            android:layout_toRightOf="@+id/ivIcon"
+            android:gravity="center"
+            android:paddingLeft="@dimen/standard_padding"
+            android:paddingRight="@dimen/standard_padding"
+            android:text="@string/cart"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/title_name_screen"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.android.gs.utils.ui.HorizontalListView
+            android:id="@+id/lvCart"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_product_height"
+            android:layout_margin="@dimen/standard_margin" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin"
+                android:text="@string/payment_type"
+                android:textColor="@android:color/black" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rbCash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:button="@xml/radio_selector"
+                    android:checked="true"
+                    android:padding="@dimen/standard_padding"
+                    android:text="@string/cash"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/title_name" />
+
+                <RadioButton
+                    android:id="@+id/rbTranfer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@xml/radio_selector"
+                    android:padding="@dimen/standard_padding"
+                    android:text="@string/tranfer_ac"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/title_name" />
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:layout_marginRight="@dimen/standard_margin"
+                android:background="@color/grey" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin"
+                android:text="@string/contact_information"
+                android:textColor="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:layout_marginRight="@dimen/edittext_margin_right_half"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvNameTitle"
+                    android:layout_width="@dimen/text_width_form"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/standard_margin"
+                    android:text="@string/name"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/content_name" />
+
+                <EditText
+                    android:id="@+id/edName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@xml/black_rect_shape"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:layout_marginRight="@dimen/edittext_margin_right_half"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvEmailTitle"
+                    android:layout_width="@dimen/text_width_form"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/standard_margin"
+                    android:text="@string/email"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/content_name" />
+
+                <EditText
+                    android:id="@+id/edEmail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@xml/black_rect_shape"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:layout_marginRight="@dimen/edittext_margin_right_half"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvMobile"
+                    android:layout_width="@dimen/text_width_form"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/standard_margin"
+                    android:text="@string/mobile"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/content_name" />
+
+                <EditText
+                    android:id="@+id/edPhone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="@xml/black_rect_shape"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/edittext_margin_right_half"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="@dimen/text_width_form"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/standard_margin"
+                    android:text="@string/content"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/content_name" />
+
+                <EditText
+                    android:id="@+id/edContent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:background="@xml/black_rect_shape"
+                    android:fadingEdge="vertical"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!-- footer -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/price_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin"
+                android:text="@string/total"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/title_name"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/standard_margin"
+                android:text="450.000 VND"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/title_name"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btPayment"
+            style="@style/CommonButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/finish_bill" />
+
+    </LinearLayout>
+
+</LinearLayout>

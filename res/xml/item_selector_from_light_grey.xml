@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/background_button_orange" android:state_pressed="true"/>
+ <!-- pressed -->
+    <item android:drawable="@color/light_grey" android:state_pressed="false"/>
+ <!-- pressed -->
+    <item android:drawable="@color/background_button_orange" android:state_selected="true"/>
+ <!-- focused -->
+    <item android:drawable="@color/light_grey" android:state_selected="false"/>
+ <!-- focused -->
+    <item android:drawable="@color/light_grey" android:state_focused="true"/>
+ <!-- focused -->
+    <item android:drawable="@color/light_grey" android:state_focused="false"/>
+ <!-- focused -->
+    <item android:drawable="@color/light_grey"/>
+ <!-- default -->
+
+</selector>

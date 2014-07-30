@@ -1,0 +1,19 @@
+<resources>
+
+    <color name="yellow">#fff100</color>
+    <color name="background_button_orange">#ff8000</color>
+    <color name="background_button_orange_selected">#f98650</color>
+    <color name="translucent_black">#80000000</color>
+    <color name="translucent_light_black">#80434343</color>
+    <color name="price_bg">#333434</color>
+    <color name="red">#ee1f23</color>
+    <color name="grey_discount">#7d7d7c</color>
+    <color name="grey_bg_detail">#f2f3f4</color>
+    <color name="grey">#dddddd</color>
+    <color name="light_grey">#eeefef</color>
+    <color name="header_line_color">#ffffff</color>
+    <color name="black">#000</color>
+    <color name="DIALOG_LINE">#4a4a53</color>
+    <color name="red_delete_bg_color">#ff3b30</color>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="layout">false</item>
+    <item type="id" name="framePhotoGallery">false</item>
+    <item type="id" name="image">false</item>
+    <item type="id" name="frameImage">false</item>
+    <item type="id" name="actionLayout">false</item>
+    <item type="id" name="effectLayout">false</item>
+    <item type="id" name="textEffect">false</item>
+    <item type="id" name="seekbar">false</item>
+    <item type="id" name="effectOkBtn">false</item>
+    <item type="id" name="selectFrameBtn">false</item>
+    <item type="id" name="leftRotateBtn">false</item>
+    <item type="id" name="rightRotateBtn">false</item>
+    <item type="id" name="effectBtn">false</item>
+    <item type="id" name="okBtn">false</item>
+    <item type="id" name="effectIcon">false</item>
+    <item type="id" name="effectName">false</item>
+    <item type="id" name="frame_image">false</item>
+    <item type="id" name="selectFrameBg">false</item>
+    <item type="id" name="titleBar">false</item>
+    <item type="id" name="gridview">false</item>
+    <item type="id" name="adView">false</item>
+    <item type="id" name="takePhoto">false</item>
+    <item type="id" name="selectPhoto">false</item>
+    <item type="id" name="moreapps">false</item>
+    <item type="id" name="imageLayout">false</item>
+    <item type="id" name="shareBtn">false</item>
+    <item type="id" name="viewBtn">false</item>
+    <item type="id" name="deleteBtn">false</item>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Con Cò Vàng</string>
+    <string name="group_name">TẬP ĐOÀN CON CÒ VÀNG HI-TECH</string>
+    <string name="close">Đóng</string>
+    <string name="login_distributer">ĐẠI LÝ ĐĂNG NHẬP</string>
+    <string name="account">Tài Khoản :</string>
+    <string name="password">Mật khẩu : </string>
+    <string name="login_upper">ĐĂNG NHẬP</string>
+    <string name="hi_tech">HI-TECH CONCOVANG</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="add_to_cart">THÊM VÀO GIỎ HÀNG</string>
+    <string name="remove_cart">BỎ KHỎI GIỎ HÀNG</string>
+     <string name="edit">SỬA </string> 
+     <string name="total">Tổng </string> 
+     <string name="payment">THANH TOÁN </string> 
+     <string name="done">XONG</string> 
+     <string name="quantity_brief">SL</string> 
+     <string name="finish_bill">HOÀN TẤT ĐƠN HÀNG </string>
+     <string name="vnd">VNĐ</string>
+     <string name="payment_type">Hình thức thanh toán : </string> 
+     <string name="cash">Tiền mặt </string>
+     <string name="tranfer_ac">Chuyển khoản </string>
+     <string name="contact_information">Thông tin liên hệ  </string>
+      <string name="delete">Xóa </string>
+     
+     <string name="name">Tên </string>
+     <string name="email">Email</string>
+     <string name="mobile">Mobile</string>
+     <string name="content">Nội dung </string>
+     <string name="remember_acc">Nhớ tài khoản </string>
+     
+     <string name="no_product">Không có sản phẩm </string>
+     <string name="no_cart">Không có sản phẩm trong giỏ hàng </string>
+     
+     <string name="exit_app">Bạn có thực sự muốn thoát?</string>
+     <string name="exit">Thoát </string>
+     <string name="no">Không </string>
+    
+    <!-- slide menu -->
+     <string name="cart">GIỎ HÀNG</string>
+      <string name="home">TRANG CHỦ</string>
+       <string name="category">DANH MỤC</string>
+    <!-- message -->
+
+    <string name="processing">Đang xử lý..</string>
+    <string name="please_wait">Đang thiết lập dữ liệu vui lòng đợi…</string>
+    <string name="msg_delete">Bạn có chắc là muốn xóa?</string>
+    <!-- error message -->
+    <string name="img_max_size">Kích thước hình tối đa :</string>
+    <string name="err_out_of_memory">Lỗi tràn bộ nhớ!</string>
+    <string name="err_invalid_format">Hình không đúng định dạng. </string>
+    <string name="common_error">Lỗi trong quá trìn xử lý, vui lòng thử lại sau. </string>
+    <string name="invalid_input_ac_pwd">Vui lòng không để trống tài khoản hoặc mật khẩu.</string>
+    
+    <string name="err_no_connection">Không có kết nối dữ liệu</string>
+    <string name="err_not_found">Không tìm thấy dữ liệu </string>
+    <string name="err_no_internet">Không có kết nối Internet. </string>
+    <string name="err_invalid_url">Đường dẫn không hợp lệ. </string>
+    <string name="err_time_out">Hết thời gian truy xuất. </string>
+    
+    <string name="err_invalid_login">Tài khoản hoặc mật khẩu không đúng. </string>
+    
+     <string name="empty_name">Vui lòng điền thông tin tên họ.</string>
+     <string name="empty_phone">Vui lòng điền số điện thoại để chúng tôi tiện liên lạc.</string>
+     <string name="invalid_email">Vui lòng nhập đúng định dạng email.</string>
+     <string name="empty_email">Vui lòng nhập email.</string>
+     
+
+    <!-- distributor name -->
+    <string name="golden_deer">CON NAI VÀNG</string>
+    <string name="vp_hi_tech">VALENTINE VP HI-TECH</string>
+    <string name="i_l_u">I LOVE YOU TẬP ĐOÀN QUỐC TẾ PHÁP VIỆT</string>
+    <string name="npk_phi">NPK PHI</string>
+    <string name="golden_stork">CON CÒ VÀNG</string>
+
+</resources>

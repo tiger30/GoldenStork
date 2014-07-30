@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- * Copyright (C) 2007 Google Inc. * * Licensed under the Apache License, 
+	Version 2.0 (the "License"); * you may not use this file except in compliance 
+	with the License. * You may obtain a copy of the License at * * http://www.apache.org/licenses/LICENSE-2.0 
+	* * Unless required by applicable law or agreed to in writing, software * 
+	distributed under the License is distributed on an "AS IS" BASIS, * WITHOUT 
+	WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. * See the 
+	License for the specific language governing permissions and * limitations 
+	under the License. -->
+
+<resources>
+	<!-- Base application theme is the default theme. -->
+	<style name="Theme" parent="android:Theme">
+	</style>
+
+	<drawable name="screen_background_black">#ff000000</drawable>
+	<drawable name="translucent_background">#88000000</drawable>
+	<drawable name="transparent_background">#00000000</drawable>
+
+	<!-- Variation on our application theme that forces a plain text style. -->
+
+
+	<style name="TextAppearance.Theme.PlainText" parent="android:TextAppearance.Theme">
+		<item name="android:textStyle">normal</item>
+	</style>
+
+	
+	
+	<style name="CommonButton" parent="@android:style/Widget.Button.Small">
+		<item name="android:background">@xml/button_selector</item>
+		<item name="android:textColor">@android:color/white</item>
+		<item name="android:layout_centerHorizontal">true</item>
+		<item name="android:layout_centerVertical">true</item>
+		<item name="android:textStyle">bold</item> 
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:minHeight">@dimen/common_button_min_height</item>
+	</style>
+	
+	<style name="SimpleButton" parent="@android:style/Widget.Button.Small">
+		<item name="android:background">@xml/item_selector_from_white</item>
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:layout_centerHorizontal">true</item>
+		<item name="android:layout_centerVertical">true</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item> 
+		<item name="android:minHeight">@dimen/common_button_min_height</item>
+		
+	</style>
+	<style name="pointer_size"></style>
+	
+</resources>

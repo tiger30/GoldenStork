@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+       android:padding="@dimen/standard_padding"
+         />
+
+    <ImageView
+        android:id="@+id/ivSplitVertical1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/standard_margin"
+        android:layout_toRightOf="@+id/ivLogo"
+         />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/standard_margin"
+        android:layout_toLeftOf="@+id/headerBts"
+        android:layout_toRightOf="@+id/ivSplitVertical1"
+        android:background="@android:color/transparent"
+        android:ellipsize="end"
+        android:shadowColor="#434343"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1.5"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:id="@+id/headerBts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/standard_padding" />
+
+    <com.android.components.SearchLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivSplitVertical1"
+        android:visibility="gone" >
+    </com.android.components.SearchLayout>
+
+</RelativeLayout>
+<!-- 
+            <RelativeLayout
+                android:id="@+id/headerLine"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/header_line_color" >
+            </RelativeLayout>
+ -->

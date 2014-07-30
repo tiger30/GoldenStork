@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/item_product_height"
+    android:background="@android:color/white"
+    android:padding="@dimen/standard_padding" >
+
+    <LinearLayout
+        android:id="@+id/llCartMain"
+        android:layout_toLeftOf="@+id/tvDelete"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/ibRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:background="@xml/item_selector"
+            android:src="@drawable/remove_icon" />
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="@dimen/image_item_product_width"
+            android:layout_height="@dimen/image_item_product_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:scaleType="fitXY"
+            android:src="@drawable/item_demo1" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/standard_margin" >
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Title"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/title_name" />
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitle"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Content Content Content Content Content Content Content Content Content Content Content Content "
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/title_name" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:background="@xml/black_rect_shape"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/quantity_brief"
+                        android:textColor="@android:color/black" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/standard_margin"
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:src="@drawable/small_ver_split" />
+
+                    <EditText
+                        android:id="@+id/edQuantity"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:digits="0123456789"
+                        android:gravity="center"
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:text="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/title_name" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvNewPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:background="@color/price_bg"
+                    android:ellipsize="middle"
+                    android:padding="@dimen/standard_padding"
+                    android:singleLine="true"
+                    android:text="450.000 VND"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/content_name"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDelete"
+        android:visibility="gone"
+        android:text="@string/delete"
+        android:layout_alignParentRight="true"
+        android:background="@color/red_delete_bg_color"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/title_name_screen"
+        android:layout_width="@dimen/item_product_height"
+        android:layout_height="fill_parent" >
+    </TextView>
+
+</RelativeLayout>

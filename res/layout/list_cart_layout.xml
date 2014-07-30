@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/headerLine"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/header_line_color" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@android:color/black"
+        android:padding="@dimen/standard_padding" >
+
+        <ImageButton
+            android:id="@+id/ivIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@xml/item_selector"
+            android:src="@drawable/ic_action_back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btEdit"
+            android:layout_toRightOf="@+id/ivIcon"
+            android:gravity="center"
+            android:paddingLeft="@dimen/standard_padding"
+            android:paddingRight="@dimen/standard_padding"
+            android:text="@string/cart"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/title_name_screen"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btEdit"
+            style="@style/SimpleButton"
+            android:layout_alignParentRight="true"
+            android:text="@string/edit" />
+    </RelativeLayout>
+	
+    <TextView
+        android:id="@+id/tvNoItem"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/standard_padding_slide_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/standard_margin"
+        android:text="@string/no_cart"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/title_name"
+        android:textStyle="bold" />
+    <ListView
+        android:id="@+id/lvProducts"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:choiceMode="singleChoice"
+        android:divider="@color/grey"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="true"
+        android:isScrollContainer="false"
+        android:textColor="#444444" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/price_bg"
+        android:orientation="vertical" >
+
+      
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+			  <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+       		android:layout_margin="@dimen/standard_margin"
+            android:text="@string/total"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_name"
+            android:textStyle="bold" />
+			  
+			  <TextView
+            android:id="@+id/tvCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+       		android:layout_margin="@dimen/standard_margin"
+       		android:layout_alignParentRight="true"
+            android:text="450.000 VND"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_name"
+            android:textStyle="bold" />
+            
+          
+        </RelativeLayout>
+          <Button
+                android:id="@+id/btPayment"
+                android:enabled="false"
+                style="@style/CommonButton"
+                android:background="@color/grey"
+                android:layout_width="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:text="@string/payment" />
+    </LinearLayout>
+
+</LinearLayout>

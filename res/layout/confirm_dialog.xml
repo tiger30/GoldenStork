@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_dia"
+        android:paddingTop="@dimen/standard_padding_slide_menu"
+        android:paddingBottom="@dimen/standard_padding_slide_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/exit_app"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+         >
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/separate_line_size"
+        android:background="@color/DIALOG_LINE" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/button_confirm_h" >
+
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/rlLine1"
+            android:background="@xml/item_selector"
+            android:clickable="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/exit"
+            android:textColor="@android:color/black"
+             />
+
+        <RelativeLayout
+            android:id="@+id/rlLine1"
+            android:layout_width="@dimen/separate_line_size"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/DIALOG_LINE" >
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_no"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/rlLine1"
+            android:background="@xml/item_selector"
+            android:clickable="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/no"
+            android:textColor="@android:color/black"
+           />
+    </RelativeLayout>
+
+</LinearLayout>
